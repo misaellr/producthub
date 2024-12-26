@@ -29,7 +29,7 @@ test-results
 
 # Gradle files
 .gradle/
-gradle-*.properties
+#gradle-*.properties
 
 # Liferay bundles and dependencies
 /bundles/

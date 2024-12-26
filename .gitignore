@@ -33,6 +33,7 @@ gradle-*.properties
 
 # Liferay bundles and dependencies
 /bundles/
+/data/
 /plugins-sdk/**/classes
 /plugins-sdk/**/ivy.xml.MD5
 /plugins-sdk/**/liferay-hook.xml.processed
@@ -65,3 +66,4 @@ docker-compose.override.yml
 *.tmp
 *.bak
 *.swp
+.blade.properties

@@ -1,1 +1,1 @@
-Read me later
+Sandbox environments for testing Liferay Products

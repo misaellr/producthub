@@ -13,3 +13,5 @@ buildscript {
 }
 
 apply plugin: "com.liferay.workspace"
+include "client-extensions:pendo-client-extension"
+include "themes"

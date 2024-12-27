@@ -47,6 +47,7 @@ test-results
 *.lock
 
 # Yarn and npm
+.yarnrc
 .yarn-integrity
 .pnp.*
 .yarn/cache

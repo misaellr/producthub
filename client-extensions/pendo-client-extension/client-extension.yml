@@ -1,0 +1,8 @@
+assemble:
+  - from: src
+    include: '**/*'
+    into: static
+pendo-client-extension:
+  name: Pendo Client Extension
+  type: globalJS
+  url: index.js

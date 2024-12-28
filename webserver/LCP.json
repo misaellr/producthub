@@ -44,6 +44,16 @@
             "customDomains": ["dev.lrproducthub.com"]
           }
         ]
+      },
+      "prd": {
+      "loadBalancer": {
+        "targetPort": 80,
+        "cdn": false,
+        "certs": [
+          {
+            "customDomains": ["lrproducthub.com"]
+          }
+        ]
       }
     }
   }

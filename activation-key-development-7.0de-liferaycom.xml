@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<license>
+	<account-name>Liferay.com</account-name>
+	<owner>Liferay.com</owner>
+	<description>Liferay.com</description>
+	<product-name>Portal Development</product-name>
+	<product-version>7.0 DE</product-version>
+	<license-name>Portal Developer (Cluster)</license-name>
+	<license-type>developer-cluster</license-type>
+	<license-version>5</license-version>
+	<start-date>Tuesday, July 19, 2016 11:34:40 PM GMT</start-date>
+	<expiration-date>Thursday, June 25, 2116 11:34:40 PM GMT</expiration-date>
+	<max-http-sessions>5</max-http-sessions>
+	<key>b1b50f7c109fb2706e48a87161278ee71f7942cf368b68e6222251564a29fc94c7fa614fbab4310e6ee4eb16436d911a04c18b85d4685d7f7c7ac50e47a3ffaa93f8ee6cc87053e1e75455b3d020c0ad1f53220248c05a12a4f6405e08af273dbb5607a4dda22f1c40026cc47509a21d20f9352561ee044c83246736ba39f625bd58ca70</key>
+</license>

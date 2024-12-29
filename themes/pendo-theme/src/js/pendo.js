@@ -22,7 +22,7 @@
     })(window, document, 'script', 'pendo');
 })('5d72ed16-3b81-4aed-542b-0f6f1f7725f3');
 
-// Initialize Pendo with visitor and account details
+// Initialize Pendo with visitor and account details - trigger build
 document.addEventListener('DOMContentLoaded', () => {
     try {
         // Extract required metadata from Liferay.ThemeDisplay

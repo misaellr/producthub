@@ -20,7 +20,7 @@
         z = e.getElementsByTagName(n)[0];
         z.parentNode.insertBefore(y, z);
     })(window, document, 'script', 'pendo');
-})('5d72ed16-3b81-4aed-542b-0f6f1f7725f3');
+})('f9de6ff2-6520-4d30-6d8f-d4182af04436');
 
 // Initialize Pendo with visitor and account details
 document.addEventListener('DOMContentLoaded', () => {

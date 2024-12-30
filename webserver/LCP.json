@@ -49,7 +49,7 @@
     "prd": {
       "loadBalancer": {
         "targetPort": 80,
-        "cdn": false,
+        "cdn": true,
         "certs": [
           {
             "customDomains": ["lrproducthub.com"]

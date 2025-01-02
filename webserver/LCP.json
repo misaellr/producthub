@@ -38,13 +38,23 @@
     "dev": {
       "loadBalancer": {
         "targetPort": 80,
-        "cdn": false
+        "cdn": false,
+        "certs": [
+          {
+            "customDomains": ["dev.lrproducthub.com"]
+          }
+        ]
       }
     },
     "prd": {
       "loadBalancer": {
         "targetPort": 80,
-        "cdn": false
+        "cdn": true,
+        "certs": [
+          {
+            "customDomains": ["lrproducthub.com"]
+          }
+        ]
       }
     }
   }

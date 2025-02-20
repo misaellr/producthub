@@ -1,1 +1,1 @@
-This is a Liferay Cloud project.
+This is a Liferay Cloud project. Force build

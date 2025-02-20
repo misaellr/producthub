@@ -13,3 +13,6 @@ pendo-client-extension:
         data-senna-track: "permanent"
         fetchpriority: "low"
     url: global.*.js
+
+
+

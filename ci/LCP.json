@@ -7,7 +7,7 @@
   "cpu": 4,
   "scale": 1,
   "volumes": {
-    "ciData": "/var/jenkins_home"
+    "ciData2": "/var/jenkins_home"
   },
   "loadBalancer": {
     "targetPort": 8080

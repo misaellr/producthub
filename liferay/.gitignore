@@ -1,22 +1,39 @@
+# Ignore IDE-specific files
 **/*.iml
-**/.ivy
-**/.classpath
-**/.project
-**/.sass-cache
-**/.settings
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Ignore build and temporary files
 **/bin
 **/build
 **/build_gradle
 **/dist
 **/node_modules
 **/node_modules_cache
-**/test-coverage
-**/tmp
+**/.sass-cache
 **/.web_bundle_build
-.gradle
-.idea
-/bundles
-/gradle-*.properties
+**/.classpath
+**/.project
+**/.settings
+**/.ivy
+**/tmp
+**/test-coverage
+test-results
+
+# Gradle files
+.gradle/
+#gradle-*.properties
+
+# Liferay bundles and dependencies
+/bundles/
+/data/
 /plugins-sdk/**/classes
 /plugins-sdk/**/ivy.xml.MD5
 /plugins-sdk/**/liferay-hook.xml.processed
@@ -24,4 +41,30 @@
 /plugins-sdk/dependencies/**/*.jar
 /plugins-sdk/dist
 /plugins-sdk/lib
-test-results
+
+# Logs and lock files
+*.log
+*.lock
+
+# Yarn and npm
+.yarnrc
+.yarn-integrity
+.pnp.*
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+yarn-error.log
+
+# Docker artifacts
+docker-compose.override.yml
+*.env
+
+# Other temporary or sensitive files
+.env
+.env.local
+.env.*.local
+*.tmp
+*.bak
+*.swp
+.blade.properties

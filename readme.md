@@ -1,1 +1,1 @@
-This is a Liferay Cloud project. push new structure
+This is a Liferay Cloud project. Testing push/build

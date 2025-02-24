@@ -1,1 +1,1 @@
-This is a Liferay Cloud project. Testing push/build
+This is a Liferay Cloud project.

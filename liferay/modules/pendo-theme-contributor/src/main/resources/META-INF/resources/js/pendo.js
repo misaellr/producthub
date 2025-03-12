@@ -45,8 +45,8 @@
     function shouldLoadPendo() {
         return (
             Liferay.ThemeDisplay.isControlPanel() ||
-            document.querySelector('nav.cadmin.control-menu-container') ||
-            document.querySelector('nav.cadmin.clfr-product-menu-panel')
+            document.querySelector('nav.cadmin.control-menu-container') &&
+            document.querySelector('nav.cadmin.lfr-product-menu-panel')
         );
     }
 

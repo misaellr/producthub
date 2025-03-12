@@ -1,17 +1,7 @@
 assemble:
-    - from: build/static
+    - from: assets
       into: static
-
-pendo-client-extension:
+liferay-sample-global-js:
     name: Pendo Client Extension
     type: globalJS
-    scope: company
-    scriptLocation: head
-    scriptElementAttributes:
-        async: true
-        data-attribute: "value"
-        data-senna-track: "permanent"
-        fetchpriority: "low"
-    url: global.*.js
-
-
+    url: global.js

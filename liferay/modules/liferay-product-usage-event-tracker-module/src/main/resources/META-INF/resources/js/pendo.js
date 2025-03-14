@@ -1,8 +1,14 @@
 (function () {
-    const PENDO_API_KEY = 'f9de6ff2-6520-4d30-6d8f-d4182af04436'; // ✅ Set the Pendo API Key
+    const PENDO_API_KEY = 'f9de6ff2-6520-4d30-6d8f-d4182af04436'; // Set the Pendo API Key
     const COOKIE_EXPIRATION_DAYS = 365; // 1 Year
 
     document.addEventListener('DOMContentLoaded', () => {
+         // Prevent execution if inside an iframe
+        if (window.self !== window.top) {
+            console.warn('Liferay Usage Event Tracker and cookie banner script blocked inside an iframe.');
+            return;
+        }
+
         setTimeout(() => {
             try {
                 if (!shouldLoadPendo()) {
@@ -13,7 +19,7 @@
                 const domainName = window.location.hostname;
                 const visitorId = `anon-${companyId}`;
 
-                // ✅ 1️⃣ First check: If both required cookies are already set, enable tracking immediately
+                // First check: If both required cookies are already set, enable tracking immediately
                 const hasPersonalizationConsent = getCookie('CONSENT_TYPE_PERSONALIZATION') === 'true';
                 const hasConfiguredConsent = getCookie('USER_CONSENT_CONFIGURED') === 'true';
 
@@ -23,7 +29,7 @@
                     return;
                 }
 
-                // ✅ 2️⃣ Second check: If USER_CONSENT_USAGE_TRACKING is set, proceed with tracking
+                // Second check: If USER_CONSENT_USAGE_TRACKING is set, proceed with tracking
                 const hasUsageConsent = getCookie('USER_CONSENT_USAGE_TRACKING') === 'true';
 
                 if (hasUsageConsent) {
@@ -31,13 +37,13 @@
                     return;
                 }
 
-                // ✅ 3️⃣ Third check: If consent is not granted, check for existing banners and inject one if needed
+                // Third check: If consent is not granted, check for existing banners and inject one if needed
                 if (!document.querySelector('.portlet-boundary_com_liferay_cookies_banner_web_portlet_CookiesBannerPortlet_')) {
                     injectCookieBanner(visitorId, domainName);
                 }
 
             } catch (error) {
-                console.error('Error initializing Pendo:', error);
+                console.error('Error initializing Liferay Usage Event Tracker:', error);
             }
         }, 2000);
     });
@@ -139,7 +145,7 @@
         document.getElementById('abcd-accept-btn').addEventListener('click', () => {
             setCookie('USER_CONSENT_USAGE_TRACKING', 'true', COOKIE_EXPIRATION_DAYS);
             document.body.removeChild(banner);
-            initializePendo(visitorId, domainName); // ✅ Dynamically start tracking without a page reload
+            initializePendo(visitorId, domainName); // Dynamically start tracking without a page reload
         });
 
         document.getElementById('abcd-decline-btn').addEventListener('click', () => {

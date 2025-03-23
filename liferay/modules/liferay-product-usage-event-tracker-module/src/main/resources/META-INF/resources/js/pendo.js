@@ -48,12 +48,22 @@
         }, 2000);
     });
 
-    function shouldLoadPendo() {
+    function isControlPanelOpen() {
         return (
-            Liferay.ThemeDisplay.isControlPanel() ||
-            document.querySelector('nav.cadmin.control-menu-container') &&
-            document.querySelector('nav.cadmin.lfr-product-menu-panel')
-        );
+            document.querySelector('nav.control-menu-container') || // Liferay 7.4
+            document.querySelector('div.control-menu-container')    // Liferay 7.3 & 7.2
+        ) !== null;
+    }
+
+    function isProductMenuOpen() {
+        return (
+            document.querySelector('nav.lfr-product-menu-panel') || // Liferay 7.4
+            document.querySelector('div.lfr-product-menu-panel')    // Liferay 7.3 & 7.2
+        ) !== null;
+    }
+
+    function shouldLoadPendo() {
+        return Liferay.ThemeDisplay.isControlPanel() || (isControlPanelOpen() && isProductMenuOpen());
     }
 
     function initializePendo(visitorId, domainName) {

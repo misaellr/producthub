@@ -54,7 +54,7 @@
         "LIFERAY_JVM_OPTS": "-Xms4096m -Xmx12288m",
         "LIFERAY_UPGRADE_PERIOD_DATABASE_PERIOD_AUTO_PERIOD_RUN": true
       }
-    }
+    },
     "dev": {
       "scale": 1,
       "env": {

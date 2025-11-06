@@ -3,7 +3,7 @@
 Complete documentation for Liferay Workspace can be found
 [here](https://learn.liferay.com/dxp/7.x/en/developing-applications/tooling/liferay-workspace.html).
 
-## Folder Structure
+## Folder Structure  
 
 ```
 my-project

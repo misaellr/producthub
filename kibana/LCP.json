@@ -1,10 +1,13 @@
 {
   "id": "kibana",
   "kind": "Deployment",
-  "image": "docker.elastic.co/kibana/kibana:7.17.23",
+  "image": "docker.elastic.co/kibana/kibana:8.17.5",
   "cpu": 2,
   "memory": 4096,
   "scale": 2,
+  "dependencies": [
+    "search"
+  ],
   "ports": [
     {
       "port": 5601,

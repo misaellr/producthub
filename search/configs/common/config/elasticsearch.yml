@@ -1,0 +1,8 @@
+# Elasticsearch configuration for Liferay Cloud
+# Disable X-Pack security for internal cluster use
+
+xpack.security.enabled: false
+xpack.security.enrollment.enabled: false
+
+# Enable monitoring
+xpack.monitoring.collection.enabled: true

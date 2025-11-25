@@ -31,11 +31,11 @@
     "failureThreshold": 12
   },
   "env": {
-    "JENKINS_ADMIN_USER_NAME": "lctlrproduct",
+    "JENKINS_ADMIN_USER_NAME": "lctmisaellatest",
     "JENKINS_URL": "https://ci-lctmisaellatest-infra.lfr.cloud",
     "LCP_CI_DEPLOY_TARGET": "dev",
-    "LCP_CI_SCM_REPOSITORY_NAME": "lctlrproduct",
-    "LCP_CI_SCM_REPOSITORY_OWNER": "dxpcloud",
+    "LCP_CI_SCM_REPOSITORY_NAME": "producthub",
+    "LCP_CI_SCM_REPOSITORY_OWNER": "misaellr",
     "LCP_CI_GRADLE_JDK": "jdk21"
   },
   "environments": {

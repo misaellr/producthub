@@ -35,7 +35,8 @@
     "JENKINS_URL": "https://ci-lctlrproduct-infra.lfr.cloud",
     "LCP_CI_DEPLOY_TARGET": "dev",
     "LCP_CI_SCM_REPOSITORY_NAME": "lctlrproduct",
-    "LCP_CI_SCM_REPOSITORY_OWNER": "dxpcloud"
+    "LCP_CI_SCM_REPOSITORY_OWNER": "dxpcloud",
+    "LCP_CI_GRADLE_JDK": "jdk21"
   },
   "environments": {
     "infra": {

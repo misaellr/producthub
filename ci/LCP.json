@@ -31,8 +31,8 @@
     "failureThreshold": 12
   },
   "env": {
-    "JENKINS_ADMIN_USER_NAME": "lctmisaellatest",
-    "JENKINS_URL": "https://ci-lctmisaellatest-infra.lfr.cloud",
+    "JENKINS_ADMIN_USER_NAME": "lctdevcon2025",
+    "JENKINS_URL": "https://ci-lctdevcon2025-infra.lfr.cloud",
     "LCP_CI_DEPLOY_TARGET": "dev",
     "LCP_CI_SCM_REPOSITORY_NAME": "producthub",
     "LCP_CI_SCM_REPOSITORY_OWNER": "misaellr",

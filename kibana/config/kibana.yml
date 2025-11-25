@@ -1,0 +1,17 @@
+server.name: kibana
+server.host: "0.0.0.0"
+
+# Connect to the search service (same ES cluster)
+elasticsearch.hosts: ["http://search:9200"]
+
+# Enable Observability features
+xpack.apm.ui.enabled: true
+xpack.infra.enabled: true
+xpack.observability.enabled: true
+
+# Monitoring
+xpack.monitoring.enabled: true
+xpack.monitoring.ui.enabled: true
+
+# Disable telemetry
+telemetry.enabled: false

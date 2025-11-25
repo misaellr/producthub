@@ -1,0 +1,44 @@
+{
+  "id": "kibana",
+  "kind": "Deployment",
+  "image": "docker.elastic.co/kibana/kibana:7.17.23",
+  "cpu": 2,
+  "memory": 4096,
+  "scale": 2,
+  "ports": [
+    {
+      "port": 5601,
+      "external": true
+    }
+  ],
+  "loadBalancer": {
+    "targetPort": 5601
+  },
+  "readinessProbe": {
+    "httpGet": {
+      "path": "/api/status",
+      "port": 5601
+    },
+    "initialDelaySeconds": 30,
+    "periodSeconds": 10
+  },
+  "livenessProbe": {
+    "httpGet": {
+      "path": "/api/status",
+      "port": 5601
+    },
+    "initialDelaySeconds": 60,
+    "periodSeconds": 30
+  },
+  "environments": {
+    "infra": {
+      "deploy": false
+    },
+    "prd": {
+      "deploy": true
+    },
+    "uat": {
+      "deploy": true
+    }
+  }
+}

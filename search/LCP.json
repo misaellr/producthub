@@ -4,7 +4,7 @@
   "image": "liferaycloud/elasticsearch:7.17.23-5.3.2",
   "cpu": 8,
   "memory": 8192,
-  "scale": 1,
+  "scale": 3,
   "ports": [
     {
       "port": 9300,
@@ -34,7 +34,8 @@
     "timeoutSeconds": 1
   },
   "env": {
-    "ES_JAVA_OPTS": "-Xms4096m -Xmx4096m"
+    "ES_JAVA_OPTS": "-Xms4096m -Xmx4096m",
+    "ENABLE_XPACK_MONITORING": "true"
   },
   "volumes": {
     "esdata": "/data"
